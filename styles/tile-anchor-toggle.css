@@ -1,0 +1,11 @@
+#tile-hud .tat-anchor-toggle {
+  color: var(--color-text-light-highlight, #f0f0e0);
+}
+
+#tile-hud .tat-anchor-toggle--topLeft {
+  box-shadow: 0 0 6px var(--color-shadow-primary, #ff6400) inset;
+}
+
+#tile-hud .tat-anchor-toggle--custom {
+  color: var(--color-text-warning, #f0b000);
+}

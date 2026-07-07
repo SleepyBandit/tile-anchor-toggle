@@ -1,0 +1,10 @@
+{
+  "TILEANCHORTOGGLE.Anchor.topLeft": "Top-left",
+  "TILEANCHORTOGGLE.Anchor.center": "Center",
+  "TILEANCHORTOGGLE.Anchor.custom": "Custom",
+  "TILEANCHORTOGGLE.HUD.ToggleLabel": "Tile anchor: {current}. Click to set {next}.",
+  "TILEANCHORTOGGLE.HUD.ToggleTooltip": "Tile anchor: {current}. Click to set {next}.",
+  "TILEANCHORTOGGLE.Info.Updated": "Tile anchor set to {anchor}.",
+  "TILEANCHORTOGGLE.Warn.Locked": "Unlock the tile before changing its anchor.",
+  "TILEANCHORTOGGLE.Error.UpdateFailed": "Tile Anchor Toggle could not update this tile. Check the console."
+}
