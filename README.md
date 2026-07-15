@@ -7,7 +7,8 @@ Foundry VTT v14 uses the tile texture anchor when resizing tiles. For users who 
 ## Features
 
 - Adds an anchor toggle button to the Tile HUD.
-- Switches tiles between center anchoring and top-left anchoring.
+- Lets a GM choose the default anchor for newly created or added tiles: **Center** or **Top Left**.
+- Switches individual tiles between center anchoring and top-left anchoring.
 - Preserves the tile's visual position when switching anchors.
 - Supports rotated tiles.
 - Works with image and video tiles.
@@ -24,6 +25,17 @@ https://github.com/SleepyBandit/tile-anchor-toggle/releases/latest/download/modu
 After installation, enable **Tile Anchor Toggle** in your world's **Manage Modules** menu.
 
 ## Usage
+
+### Set the world default for new tiles
+
+1. Log in as a GM.
+2. Open **Configure Settings** → **Module Settings**.
+3. Under **Tile Anchor Toggle**, select **Center** (the default) or **Top Left** for **Default Anchor Position**.
+4. Save the setting.
+
+The selected anchor is applied to tiles created or added to the canvas afterward. Existing tiles keep their saved anchor positions.
+
+### Change one tile
 
 1. Log in as a GM.
 2. Open the Tiles layer.

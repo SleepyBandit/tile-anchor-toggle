@@ -2,7 +2,7 @@
   "id": "tile-anchor-toggle",
   "title": "Tile Anchor Toggle",
   "description": "Adds a quick Tile HUD button to toggle Foundry VTT v14 tiles between center and top-left resize anchors while preserving their visual position.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     {
       "name": "SleepyBandit"
@@ -29,5 +29,5 @@
   "readme": "README.md",
   "url": "https://github.com/SleepyBandit/tile-anchor-toggle",
   "manifest": "https://github.com/SleepyBandit/tile-anchor-toggle/releases/latest/download/module.json",
-  "download": "https://github.com/SleepyBandit/tile-anchor-toggle/releases/download/v0.1.0/module.zip"
+  "download": "https://github.com/SleepyBandit/tile-anchor-toggle/releases/download/v0.2.0/module.zip"
 }

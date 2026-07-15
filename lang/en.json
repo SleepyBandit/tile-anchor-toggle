@@ -1,7 +1,9 @@
 {
-  "TILEANCHORTOGGLE.Anchor.topLeft": "Top-left",
+  "TILEANCHORTOGGLE.Anchor.topLeft": "Top Left",
   "TILEANCHORTOGGLE.Anchor.center": "Center",
   "TILEANCHORTOGGLE.Anchor.custom": "Custom",
+  "TILEANCHORTOGGLE.Settings.DefaultAnchor.Name": "Default Anchor Position",
+  "TILEANCHORTOGGLE.Settings.DefaultAnchor.Hint": "Anchor position assigned to tiles newly created or added to the canvas. Existing tiles are not changed.",
   "TILEANCHORTOGGLE.HUD.ToggleLabel": "Tile anchor: {current}. Click to set {next}.",
   "TILEANCHORTOGGLE.HUD.ToggleTooltip": "Tile anchor: {current}. Click to set {next}.",
   "TILEANCHORTOGGLE.Info.Updated": "Tile anchor set to {anchor}.",

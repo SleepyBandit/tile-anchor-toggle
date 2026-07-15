@@ -1,4 +1,7 @@
 const MODULE_ID = "tile-anchor-toggle";
+const SETTINGS = {
+  DEFAULT_ANCHOR: "defaultAnchor"
+};
 
 const ANCHORS = {
   TOP_LEFT: {x: 0, y: 0, key: "topLeft"},
@@ -7,6 +10,28 @@ const ANCHORS = {
 
 Hooks.once("init", () => {
   console.info(`${MODULE_ID} | Initializing Tile Anchor Toggle`);
+
+  game.settings.register(MODULE_ID, SETTINGS.DEFAULT_ANCHOR, {
+    name: "TILEANCHORTOGGLE.Settings.DefaultAnchor.Name",
+    hint: "TILEANCHORTOGGLE.Settings.DefaultAnchor.Hint",
+    scope: "world",
+    config: true,
+    restricted: true,
+    type: String,
+    choices: {
+      [ANCHORS.CENTER.key]: "TILEANCHORTOGGLE.Anchor.center",
+      [ANCHORS.TOP_LEFT.key]: "TILEANCHORTOGGLE.Anchor.topLeft"
+    },
+    default: ANCHORS.CENTER.key
+  });
+});
+
+Hooks.on("preCreateTile", document => {
+  const anchor = getDefaultAnchor();
+  document.updateSource({
+    "texture.anchorX": anchor.x,
+    "texture.anchorY": anchor.y
+  });
 });
 
 Hooks.on("renderTileHUD", (app, element) => {
@@ -81,6 +106,11 @@ async function onToggleAnchor(event, tile, app) {
     console.error(`${MODULE_ID} | Failed to update tile anchor`, err);
     ui.notifications?.error(game.i18n.localize("TILEANCHORTOGGLE.Error.UpdateFailed"));
   }
+}
+
+function getDefaultAnchor() {
+  const configuredMode = game.settings.get(MODULE_ID, SETTINGS.DEFAULT_ANCHOR);
+  return configuredMode === ANCHORS.TOP_LEFT.key ? ANCHORS.TOP_LEFT : ANCHORS.CENTER;
 }
 
 function getAnchorMode(document) {
